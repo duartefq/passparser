@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="bitpassparser",
-    version="0.0.6",
+    name="bitpassparser-test",
+    version="0.0.1",
     author="Duarte Fernandes",
     author_email="duartefq@outlook.com",
     description="A package to parse and sanitize passwords from Bitwarden",
@@ -13,7 +13,8 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/duartefq/passparser",
     packages=setuptools.find_packages(),
-    scripts=['bin/passparser'],
+    scripts=['bin/bitpassparser'],
+    install_requires=['tldextract'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
