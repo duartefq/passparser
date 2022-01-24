@@ -1,6 +1,6 @@
 # passparser
 
-Parse, Process, Sanitize.
+Parse macOS Keychain passwords and output a bitwarden-compatible csv file.
 
 ## usage
 
